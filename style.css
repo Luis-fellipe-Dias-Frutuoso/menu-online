@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(213, 213, 213);
+    height: 100vh;
+    padding: 40px 4%;
+    margin-bottom: 30px;
+}
+button:hover,.enviar input:hover{
+    box-shadow: 0px 0px 8px #f6f9f6;
+    transform: scale(11.5s);
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0% auto;
+    
+}
+
+.flex {
+    display: flex;
+}
+
+/* estilo do cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover {
+    color: white;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 20px; /* Reduzindo o padding para economizar espaço */
+}
+.enviar{
+    background-color: #00ffbf;
+    border: 0;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer
+}
+
+.contato {
+    padding: 10px 20px; /* Reduzindo o padding para economizar espaço */
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #f5c34e;
+    border: 0;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.contato:hover {
+    box-shadow: 0px 0px 8px rgb(9, 28, 9);
+}
+.topo {
+    margin: 40px 4%;
+    
+
+}
+
+section.topo .flex {
+    align-items: center;
+    justify-content: space-between; /* Espaçamento entre a imagem e o texto */
+}
+
+.topo h1 {
+    color:rgb(244, 100, 100);
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.topo h1 span {
+    color: #79d07c;
+    
+}
+
+.topo p {
+    color: rgb(0, 0, 0);
+    margin: 20px 0; /* Reduzindo a margem para economizar espaço */
+}
+
+section a {
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+
+}
+
+
+.topo .img-topo img {
+    position: relative;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+
+}
+
+
+section .especial{
+    padding: 40px 4%;
+}
+.especial .flex{
+    gap: 60px;
+
+}
+.title{
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+}
+.title span{
+    color:#00ff08
+}
+.especial-box{
+    color: #000000;
+    padding: 40px 4%;
+  margin-bottom: 40px;
+    margin-top:4px ;
+    border-radius: 20px;
+    transition: 1.5s;
+    
+    
+
+
+}
+
+.especial-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px white;
+}
+.especial-box {
+    position: relative;
+    background-image:
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Ajustando a opacidade da imagem de fundo */
+.especial-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Ajuste a opacidade conforme necessário */
+}
+
+.especial-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 1; /* Ajuste a opacidade conforme necessário */
+}
+
+.especial-box h3 {
+    color: rgb(244, 100, 100);
+}
+
+.especial-box p {
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 100;
+}
+.especial-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+
+
+}
+.sobre{
+    padding: 40px 4%;
+}
+.txt-sobre{
+    color: white;
+    
+}
+.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.so-mudar{
+    height: 300px;
+    right: 300px;
+    margin-left: -70px;
+}
+.txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+}
+.txt-sobre h2 span{
+    color: #00ff08;
+    display: block;
+}
+.txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.btn-social button{
+    width: 60px;
+    right: 60px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.btn-social button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(11.5s);
+    transition: .2s;
+}
+section.portifolio {
+   padding: 40px 4%; /* Adicionando algum espaço interno */
+ box-shadow: 0PX 0PX 40PX 10PX rgba(255, 255, 255, 0.027);
+    
+}
+
+section.portifolio .flex {
+    margin-top: 60px;
+    justify-content: space-around; /* Aplicando a justificação desejada */
+   
+}
+
+.img-port {
+    width: 260px;
+    height: 360px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+
+
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+.escuro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #0000007f;
+    color: rgb(240, 106, 106);
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.escuro:hover{
+    opacity: 1;
+}
+section.fomulario{
+    padding: 80px 4%;
+
+}
+form{
+    max-width:500px ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+
+}
+form input,form textarea{
+    width: 100%;
+    background-color: rgba(42, 42, 42, 0.94);
+    border: none;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+form input::placeholder{
+    color: #00ff08;
+}
+form textarea{
+    resize: none;
+    max-height:200px ;
+}
+.enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+.enviar input{
+    width: 120px;
+    background-color: #00ff08;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+}
+.logop img{
+    width: 150px;
+    height: 150px;
+    margin-right: 500px;
+    margin-top: -60px;
+}
+/* roda pé */
+footer{
+    padding: 60px 4%;
+  
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+footer.line-top p,a{
+    color: #000000;
+}
+.borda{
+    border-bottom: 2px solid green;
+}
+@media screen and ( max-width: 1020px){
+    .menu,.contato{
+        display: none;
+    }
+    .flex{
+        flex-direction: column-reverse;
+        
+       
+    }
+    .topo .img-topo img{
+    flex-direction: row-reverse;
+    margin-left: 0%;
+    }
+
+    .topo {
+        margin:10px 4%;
+        
+    
+    }
+    .topo h1 {
+        color: rgb(244, 100, 100);
+        font-size: 39px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .topo p {
+        color: rgb(2, 2, 2);
+        margin: 20px 0; /* Reduzindo a margem para economizar espaço */
+        text-align: center;
+        ;
+    }
+    .img-topo img {
+  
+        flex-direction: column;
+    }
+    .txt-topo{
+        text-align: center;
+        margin-left: 6%;
+    }
+    .img-port:focus{
+        background-position: 100% 100%;
+    }
+    .especial-box{
+        margin-bottom: 7px;
+    }
+
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.menu-item img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.add-to-cart {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+h1 {
+    text-align: center;
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 300px;
+    box-sizing: border-box;
+    display: inline
+    ;
+    
+    align-items: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.descricao {
+    text-align: left;
+    flex: 1;
+    width: 100%;
+    padding-right: 10px;
+}
+
+.botoes {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.botoes button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: rgb(244, 100, 100);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+#carrinho {
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+#lista-carrinho {
+    list-style: none;
+    padding: 0;
+}
+
+#total-carrinho {
+    margin-top: 10px;
+}
+
+
+
+
+#form-pagamento {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#form-pagamento textarea {
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#form-pagamento label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#form-pagamento input,
+#form-pagamento textarea,
+#form-pagamento select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#form-pagamento button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Centraliza o botão */
+    display: block; /* Para ocupar toda a largura disponível */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+#form-pagamento button:hover {
+    background-color: #45a049;
+}
+
+
+#ver-carrinho-btn {
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    width: 50px;
+   height: 50px;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: fixed; /* para tornar o botão fixo */
+    left: 20px; /* ajuste a posição à esquerda conforme necessário */
+    bottom: 20px; /* ajuste a posição inferior conforme necessário */
+}
+
+.produto img{
+    width: 275px;
+    height: 183px;
+    border-radius: 30px;
+}

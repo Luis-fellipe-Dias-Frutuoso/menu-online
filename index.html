@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="interface">
+                <div class="logo">
+                    <a href="l"><img src="istockphoto-1156423972-612x612-removebg-preview.png" alt=""></a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="http://">inicio</a></li>
+                        <li><a href="http://">carrinho</a></li>
+                        <li><a href="http://">sobre</a></li>
+                        <li><a href="http://">projetos</a></li>
+                    </ul> 
+                </nav>
+                <button class="contato"><a href="http://">contato</button></a>
+        </div>
+    </header>
+    <main>
+            <section class="topo">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="txt-topo">
+                            <h1>sobre <span>.</span></h1>
+                            <p> Descubra o prazer de uma experiência culinária única no coração da cidade!
+
+                                No ****, não apenas servimos refeições, criamos memórias gustativas que perduram. Nossos chefs apaixonados dedicam-se a trazer a autenticidade de sabores frescos e locais para a sua mesa.</p>
+                          
+                            <button class="contato"><a href="http://">contato</button></a>
+                            
+                        </div>
+                        <div class="img-topo">
+                            <img src="download (1).jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <section class="especial">
+            <div class="interface">
+                <h2 class="title" style="color: rgb(244, 100, 100);">especialidades<span style="color: black;"> da casa</span></h2>
+                <div class="flex">
+                    <div class="especial-box">
+                    <img src="salada.jpg" alt="">
+                    <h3 style="color: rgb(244, 100, 100);">salada</h3>
+                    <p style="color: black;">Explore o sabor vibrante e a frescura dos ingredientes cuidadosamente selecionados na Salada Especial do Chef é uma fusão de sabores irresistíveis e ingredientes frescos da mais alta qualidade. </p>
+                    </div>
+                    <div class="especial-box">
+                    <img src="images.jpg" alt="">
+                    <h3 style="color: rgb(244, 100, 100);">Batata</h3>
+                    <p style="color: black;">Dê um toque crocante e delicioso à sua experiência gastronômica com as batatas irresistíveis do "A Batata Dourada". Preparadas com maestria e amor, cada opção é uma explosão de sabor.</p>
+                    </div>
+                    <a href="https://web.telegram.org/k/#-1633284367">
+                    <div class="especial-box">
+                        <img src="refrigeran9te.jpg" alt="">
+                        <h3 style="color: rgb(244, 100, 100);">drinks</h3>
+                        <p style="color: black;">Dê um toque especial à sua experiência no "Sabor Líquido" com nossos irresistíveis drinks, cuidadosamente preparados para satisfazer seu paladar e proporcionar momentos de puro prazer. </p>
+                        
+                    </div>
+                    </a>
+    
+                </div>
+            </div>
+        </section>
+        <section class="cardapio">
+            <div class="interface">
+                <h2 class="title" style="color: rgb(244, 100, 100);" >Cardápio</h2>
+                <div class="flex">
+                    
+
+                    <div id="produtos">
+                      <div class="produto" data-nome="Pizza" data-preco="25.00">
+                        <img src="piza.jpg" alt="Pizza">
+                        <div class="descricao">
+                          <h2>Pizza</h2>
+                          <p>Massa, molho de tomate, queijo e ingredientes diversos.</p>
+                          <p>Preço: R$ 25,00</p>
+                        </div>
+                        <div class="botoes">
+                          <button onclick="adicionarAoCarrinho('Pizza', 25.00)">Adicionar ao Carrinho</button>
+                          <button onclick="alterarQuantidade('Pizza', 1)">+</button>
+                          <div id="quantidade-Pizza">0</div>
+                          <button onclick="alterarQuantidade('Pizza', -1)">-</button>
+                        </div>
+                      </div>
+                      <div class="produto" data-nome="Hambúrguer" data-preco="15.00">
+                        <img src="hanburh.jpg" alt="Hambúrguer">
+                        <div class="descricao">
+                          <h2>Hambúrguer</h2>
+                          <p>Pão, carne, queijo, alface, tomate e molho especial.</p>
+                          <p>Preço: R$ 15,00</p>
+                        </div>
+                        <div class="botoes">
+                          <button onclick="adicionarAoCarrinho('Hambúrguer', 15.00)">Adicionar ao Carrinho</button>
+                          <button onclick="alterarQuantidade('Hambúrguer', 1)">+</button>
+                          <div id="quantidade-Hambúrguer">0</div>
+                          <button onclick="alterarQuantidade('Hambúrguer', -1)">-</button>
+                        </div>
+                      </div> 
+                      <div class="produto" data-nome="Batata" data-preco="20.00">
+                        <img src="images.jpg" alt="Batata">
+                        <div class="descricao">
+                          <h2>Batata</h2>
+                          <p>chedar, carne, queijo, bacon e molho especial.</p>
+                          <p>Preço: R$ 20,00</p>
+                        </div>
+                        <div class="botoes">
+                          <button onclick="adicionarAoCarrinho('Batata', 20.00)">Adicionar ao Carrinho</button>
+                          <button onclick="alterarQuantidade('Batata', 1)">+</button>
+                          <div id="quantidade-Batata">0</div>
+                          <button onclick="alterarQuantidade('Batata', -1)">-</button>
+                        </div>
+                      </div>
+                      <div class="produto" data-nome="refrigerante" data-preco="8.50">
+                        <img src="refrigerante.jpg" alt="refrigerante">
+                        <div class="descricao">
+                          <h2>refrigerante</h2>
+                          <p>sabor cola</p>
+                          <p>Preço: R$ 8,50</p>
+                        </div>
+                        <div class="botoes">
+                          <button onclick="adicionarAoCarrinho('refrigerante', 8.50)">Adicionar ao Carrinho</button>
+                          <button onclick="alterarQuantidade('refrigerante', 1)">+</button>
+                          <div id="quantidade-refrigerante">0</div>
+                          <button onclick="alterarQuantidade('refrigerante', -1)">-</button>
+                        </div>
+                      </div>
+                      <div class="produto" data-nome="sopa" data-preco="18.00">
+                        <img src="sopa.jpg" alt="sopa">
+                        <div class="descricao">
+                          <h2>sopa</h2>
+                          <p>legume, carne, macarrao,cove.</p>
+                          <p>Preço: R$ 18,00</p>
+                        </div>
+                        <div class="botoes">
+                          <button onclick="adicionarAoCarrinho('sopa', 18.00)">Adicionar ao Carrinho</button>
+                          <button onclick="alterarQuantidade('sopa', 1)">+</button>
+                          <div id="quantidade-sopa">0</div>
+                          <button onclick="alterarQuantidade('sopa', -1)">-</button>
+                        </div>
+                      </div>
+                      
+                      <div class="produto" data-nome="taco" data-preco="13.90">
+                        <img src="taco.jpg" alt="taco">
+                        <div class="descricao">
+                          <h2>Taco de carne.</h2>
+                          <p>feijão, carne, queijo, bacon e molho especial.</p>
+                          <p>Preço: R$ 13,90</p>
+                        </div>
+                        <div class="botoes">
+                          <button onclick="adicionarAoCarrinho('taco', 13.90)">Adicionar ao Carrinho</button>
+                          <button onclick="alterarQuantidade('taco', 1)">+</button>
+                          <div id="quantidade-taco">0</div>
+                          <button onclick="alterarQuantidade('taco', -1)">-</button>
+                        </div>
+                      </div>
+                      <!-- Adicione mais produtos conforme necessário -->
+                    </div>
+                    
+                    
+                    </div>
+                
+                    <button id="ver-carrinho-btn" onclick="toggleCarrinho()">🛒</button>
+                
+                    <div id="carrinho">
+                        <h2>Seu Carrinho</h2>
+                        <ul id="lista-carrinho"></ul>
+                        <p id="total-carrinho"></p>
+                        <button onclick="finalizarCompra()">Finalizar Compra</button>
+                        <div id="form-pagamento">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" required><br>
+                            <label for="endereco">Endereço:</label>
+                            <input type="text" id="endereco" required><br>
+                            <label for="numero-casa">Número da Casa:</label>
+                            <input type="text" id="numero-casa" required><br>
+                            <label for="referencia">Referência:</label>
+                            <input type="text" id="referencia"><br>
+                            <label for="observacao">Observação:</label>
+                            <textarea id="observacao"></textarea><br>
+                            
+                            <label for="metodo-pagamento">Escolha o Método de Pagamento:</label>
+                            <select id="metodo-pagamento">
+                                <option value="cartao">Cartão de Crédito</option>
+                                <option value="pix">Pix</option>
+                                <option value="dinheiro">Dinheiro</option>
+                            </select>
+                            <button onclick="processarPagamento()">Pagar</button>
+                        </div>
+                    </div>
+                
+                    <script>
+                        var carrinho = {};
+                
+                        function adicionarAoCarrinho(nome, preco) {
+                            carrinho[nome] = carrinho[nome] ? carrinho[nome] + 1 : 1;
+                            exibirCarrinho();
+                            
+                        }
+                
+                        function alterarQuantidade(nome, quantidade) {
+                            carrinho[nome] += quantidade;
+                            if (carrinho[nome] <= 0) {
+                                delete carrinho[nome];
+                            }
+                            exibirCarrinho();
+                        }
+                
+                        function exibirCarrinho() {
+                            var listaCarrinho = document.getElementById("lista-carrinho");
+                            var totalCarrinho = document.getElementById("total-carrinho");
+                
+                            listaCarrinho.innerHTML = "";
+                            var totalQuantidade = 0;
+                            var totalPreco = 0.00;
+                
+                            for (var produto in carrinho) {
+                                var quantidade = carrinho[produto];
+                                var preco = parseFloat(document.querySelector(`[data-nome="${produto}"]`).getAttribute('data-preco'));
+                                var listItem = document.createElement("li");
+                                listItem.textContent = produto + ": " + quantidade + " unidades - Total: R$ " + (quantidade * preco).toFixed(2);
+                                listaCarrinho.appendChild(listItem);
+                
+                                totalQuantidade += quantidade;
+                                totalPreco += quantidade * preco;
+                
+                                // Atualizar quantidade exibida no meio dos botões
+                                document.getElementById(`quantidade-${produto}`).textContent = quantidade;
+                            }
+                
+                            totalCarrinho.textContent = "Total no Carrinho: " + totalQuantidade + " unidades - Valor total: R$ " + totalPreco.toFixed(2);
+                
+                            var formPagamento = document.getElementById("form-pagamento");
+                            formPagamento.style.display = totalQuantidade > 0 ? "block" : "none";
+                            var verCarrinhoBtn = document.getElementById("ver-carrinho-btn");
+                            verCarrinhoBtn.style.display = totalQuantidade > 0 ? "block" : "none";
+                        }
+                
+                        function finalizarCompra() {
+                            var formPagamento = document.getElementById("form-pagamento");
+                            formPagamento.style.display = "block";
+                        }
+                
+                        
+                        function toggleCarrinho() {
+            var carrinhoDiv = document.getElementById("carrinho");
+
+            if (carrinhoDiv.style.display === "none" || carrinhoDiv.style.display === "") {
+                carrinhoDiv.style.display = "block";
+                document.getElementById("ver-carrinho-btn").textContent = "🛒";
+
+                // Adicione esta linha para fazer a página deslizar para o final
+                carrinhoDiv.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+            } else {
+                carrinhoDiv.style.display = "none";
+                document.getElementById("ver-carrinho-btn").textContent = "🛒";
+            }
+        }
+                
+                        function processarPagamento() {
+                            var nome = document.getElementById("nome").value;
+                            var endereco = document.getElementById("endereco").value;
+                            var numeroCasa = document.getElementById("numero-casa").value;
+                            var referencia = document.getElementById("referencia").value;
+                            var observacao = document.getElementById("observacao").value;
+                            var metodoPagamento = document.getElementById("metodo-pagamento").value;
+                
+                            var carrinhoInfo = obterInformacoesCarrinho();
+                            var mensagemWhatsApp = `
+                            *Pedido de Compra*
+                
+                            *Informações do Cliente:*
+                            Nome: ${nome}
+                            Endereço: ${endereco}
+                            Número da Casa: ${numeroCasa}
+                            Referência: ${referencia}
+                            Observação: ${observacao}
+                
+                            *Produtos:*
+                            ${carrinhoInfo.produtos}
+                
+                            *Total:*
+                            ${carrinhoInfo.total}
+                            
+                            *Método de Pagamento:*
+                            ${metodoPagamento.charAt(0).toUpperCase() + metodoPagamento.slice(1)}
+                            `;
+                
+                            var linkWhatsapp = "https://api.whatsapp.com/send?phone=+5521971280219&text=" + encodeURIComponent(mensagemWhatsApp);
+                            window.open(linkWhatsapp, '_blank');
+                        }
+                
+                        function obterInformacoesCarrinho() {
+                            var listaCarrinho = document.getElementById("lista-carrinho");
+                            var totalCarrinho = document.getElementById("total-carrinho");
+                
+                            var produtos = "";
+                            var totalQuantidade = 0;
+                            var totalPreco = 0.00;
+                
+                            for (var produto in carrinho) {
+                                var quantidade = carrinho[produto];
+                                var preco = parseFloat(document.querySelector(`[data-nome="${produto}"]`).getAttribute('data-preco'));
+                                produtos += `${produto}: ${quantidade} unidades - Total: R$ ${(
+                                    quantidade * preco
+                                ).toFixed(2)}\n`;
+                
+                                totalQuantidade += quantidade;
+                                totalPreco += quantidade * preco;
+                            }
+                
+                            var total = `Total no Carrinho: ${totalQuantidade} unidades - Valor total: R$ ${totalPreco.toFixed(2)}`;
+                
+                            return { produtos, total };
+                        }
+                    </script>
+                
+                </body>
+                </html>
+                
+                </div>
+            </div>
+        </section>
+        
+</main>
+
+</body>
+</html>
